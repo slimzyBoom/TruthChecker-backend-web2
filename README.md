@@ -1,4 +1,3 @@
-```markdown
 # 🕵️‍♂️ TruthCheck – Combating Misinformation in Nigeria
 
 TruthCheck is an intelligent claim verification system designed to fight misinformation across Nigeria. It allows users to verify the authenticity of claims submitted as text, article links, or images, and returns clear explanations in five local languages.
