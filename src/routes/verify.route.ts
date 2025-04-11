@@ -4,11 +4,12 @@ import {
   verifyImageClaim,
   verifyLinkClaim,
 } from "../controllers/verify.controller";
+import handleLanguage from "../middleware/handleLanguage"; // Import the centralized middleware
 
 const router = Router();
 
-router.post("/text", verifyTextClaim);
-router.post("/image", verifyImageClaim);
-router.post("/link", verifyLinkClaim);
+router.post("/text", handleLanguage, verifyTextClaim);
+router.post("/image", handleLanguage, verifyImageClaim);
+router.post("/link", handleLanguage, verifyLinkClaim);
 
 export default router;
