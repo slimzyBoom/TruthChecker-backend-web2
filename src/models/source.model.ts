@@ -12,12 +12,12 @@ export interface ArticleDocument extends Document {
 
 const ArticleSchema = new Schema<ArticleDocument>(
   {
-    title: { type: String, required: true },
-    link: { type: String, required: true, unique: true },
-    snippet: { type: String, required: true },
+    title: { type: String, required: false },
+    link: { type: String, required: false, unique: true },
+    snippet: { type: String, required: false },
     pubDate: { type: String, required: false },
-    source: { type: String, required: true },
-    category: { type: String, required: true },
+    source: { type: String, required: false },
+    category: { type: String, required: false },
     image: { type: String, required: false },
   },
   {

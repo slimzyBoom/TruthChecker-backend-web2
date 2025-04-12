@@ -1,9 +1,14 @@
 import { Router } from "express";
-import { verifyTextClaim, verifyLinkClaim } from "../controllers/verify.controller";
+import {
+  verifyTextClaim,
+  verifyUrlClaim,
+  sendAllVerifiedClaims
+} from "../controllers/verify.controller";
 
 const router = Router();
 
 router.post("/text", verifyTextClaim);
-router.post("/link", verifyLinkClaim);
+router.post("/link", verifyUrlClaim);
+router.get("/all", sendAllVerifiedClaims);
 
 export default router;
