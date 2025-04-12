@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"version":"5.8.3"}
+{"root":["./src/app.ts","./src/server.ts","./src/config/db.config.ts","./src/controllers/verify.controller.ts","./src/middleware/errorhandler.ts","./src/middleware/logger.ts","./src/models/claims.model.ts","./src/models/source.model.ts","./src/routes/verify.route.ts","./src/services/rssfetcher.service.ts","./src/tests/rssfetcher.test.ts","./src/types/article.d.ts"],"version":"5.8.3"}
