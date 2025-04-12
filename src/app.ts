@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import './jobs/rss.job'; // Import the job to fetch and save RSS articles
 import { requestLogger } from "./middleware/logger";
 import dotenv from "dotenv";
 import { errorHandler } from "./middleware/errorHandler";

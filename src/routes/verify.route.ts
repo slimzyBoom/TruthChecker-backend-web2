@@ -1,14 +1,14 @@
 import { Router } from "express";
 import {
   verifyTextClaim,
-  verifyImageClaim,
-  verifyLinkClaim,
+  verifyUrlClaim,
+  sendAllVerifiedClaims
 } from "../controllers/verify.controller";
 
 const router = Router();
 
 router.post("/text", verifyTextClaim);
-router.post("/image", verifyImageClaim);
-router.post("/link", verifyLinkClaim);
+router.post("/link", verifyUrlClaim);
+router.get("/all", sendAllVerifiedClaims);
 
 export default router;
